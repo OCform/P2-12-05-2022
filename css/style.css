@@ -1,0 +1,482 @@
+*, *:before, *:after {
+  -moz-box-sizing    : border-box; /* Firefox */
+  -webkit-box-sizing : border-box; /* Safari */
+  box-sizing         : border-box;
+  *behavior          : url(./js/boxsizing.htc); /* ie7 et ie8 */
+}
+
+/*oooo Color Chart oooo*/ 
+:root {
+  --blue: #0065FC;
+  --light-blue: #DEEBFF;
+  --grey: #F2F2F2;
+}
+
+.blue {
+  color: #0065FC;
+}
+
+.light-blue {
+  color: #DEEBFF
+}
+
+.grey {
+  color: #F2F2F2; 
+}
+/*xxxx Color Chart xxxx*/
+
+/*ooo Global Classes ooo*/
+body { 
+  height: 1880px;
+  margin: 0px auto;
+  font-family: 'Raleway', sans-serif;  
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+/*ooo Global Classes ooo*/
+
+/*ooo Header ooo*/
+header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  max-width: 1380px;  
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;  
+}
+
+#header-navigation ul {
+  display: flex;
+}
+
+#header-navigation ul li {  
+  height: 100px;
+}
+
+#header-navigation a {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid transparent;
+}
+
+#header-navigation a:hover {
+  color: var(--blue);
+  border-top: 2px solid var(--blue);
+}
+
+header a.logo img {
+  width: 100px;
+  height: 50px;
+}
+/*xxx Header xxx*/
+
+/*oooo Main oooo*/ 
+main {
+  flex: 1;
+  max-width: 1380px;
+  min-width: 180px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+/*o title o*/
+main .title {
+    padding: 0; 
+    display: flex;  
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .title h1 {
+    margin: 0; 
+    font-size: 22px;   
+}
+
+main .title p {
+    margin: 5px 0;
+}
+/*x title x*/
+
+/*o formulaire o*/
+main form.form-search {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+main form i.fa-map-marker-alt {
+    width: 46px;
+    height: 45px;
+    padding: 15px 17px;
+    background-color: var(--grey);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border: 1px solid var(--grey);
+}
+
+input.p-holder {
+    width: 200px;
+    height: 45px;
+    padding-left: 10px;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid transparent;
+    border-top: 1px solid var(--grey);
+    border-bottom: 1px solid var(--grey);
+}
+
+input.search {
+    height: 45px;
+    color: #FFF;
+    padding: 12px 15px;
+    background-color: var(--blue);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: 1px solid var(--blue);    
+    font-weight: bolder;
+}  
+  
+input::placeholder {
+    color: #000;
+    font-weight: bolder;
+}
+  
+.fa-search {
+    opacity: 0;
+}
+/*x formulaire x*/
+
+/*o filters o*/
+main div.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;   
+    margin: 20px 0; 
+}
+
+main div.filters div.mobile {
+    display: flex;
+    gap: 50px;
+}
+
+.filters p {
+    margin: 0;
+    font-weight: bold;    
+}
+
+.filters span {
+  font-weight: bolder;
+  margin: 0 20px;    
+}
+
+.fa-money-bill-wave, 
+.fa-child, 
+.fa-heart, 
+.fa-dog { 
+  width: 34px; 
+  height: 34px;
+  background: white;
+  border-radius: 50%;
+  color: var(--blue);
+  padding: 9px 2px 10px 0px;
+}
+
+div.filters button  { 
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FFF;    
+  border-radius: 50px;
+  border: 2px solid var(--grey);
+}
+
+button i.filter {
+  background: var(--light-blue);
+  color: var(--blue);
+  margin: 0;
+}
+/*x filters x*/
+
+/*o information o*/
+.fa-info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 6px 6px 8px 7px;
+  width: 24px; 
+  height: 24px;
+  border: 2px solid var(--grey);
+  border-radius: 50%;
+  color: var(--blue);
+}
+  
+  main div.information {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+  
+main div.information p {
+    margin-left: 5px;
+}
+/*o information o*/
+
+/*ooo Hebergements && Populaires && Activtes ooo*/
+
+/*ooo Hebergements && Populaires ooo*/
+.row-heber-popul {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  border: 2px solid green;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-heber {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  max-width: 70%;
+  padding: 0 25px 0 4px;
+}
+
+.column-heber .box {
+  margin: 8px 0;
+  vertical-align: top;
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.column-popul {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px 0 25px;
+}
+
+.column-popul .box {
+  margin: 8px 0;
+  vertical-align: top;
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+/* Responsive layout - makes a two equal column-layout instead of two unequal columns */
+@media screen and (max-width: 992px) {
+  
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  
+}
+/*xxx Hebergements && Populaires xxx*/
+
+/*xxx Hebergements && Populaires && Activtes xxx*/
+
+ /*ooo Card ooo*/
+/*xxx Card xxx*/
+/*xxxx Main xxxx*/
+
+/*ooo Footer ooo*/ 
+footer {
+  background-color: var(--grey);
+  padding-bottom: 90px;
+}
+
+#footer-navigation {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+#footer-navigation li {
+  line-height: 200%;
+}
+/*xxx Footer xxx*/ 
+
+/*ooo Responsive layout - 1280px ooo*/
+@media all and (max-width: 1280px) {}
+/*xxx Responsive layout - 1280px xxx*/
+
+/*ooo Responsive layout - 992px ooo*/
+@media all and (max-width: 992px) {
+  /*ooo Hebergements and Plus Populaires ooo*/
+  .column-heber {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  
+  .column-popul {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  /*xxx Hebergements and Plus Populaires xxx*/
+}
+/*xxx Responsive layout - 992px xxx*/
+
+/*ooo Responsive layout - 768px ooo*/
+@media all and (max-width: 768px) {
+  /*ooo Header ooo*/
+  header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin: 50px auto 0;  
+  }
+
+  #header-navigation ul {
+    display: flex;
+  }
+
+  #header-navigation a {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--grey);
+  }
+
+  #header-navigation a:hover {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid var(--blue);
+  }
+
+  header a.logo {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header a.logo img {
+    width: 100px;
+  }
+  /*xxx Header xxx*/
+
+  /*oooo Main oooo*/ 
+ 
+  /*o title o*/     
+  main .title h1 {
+      margin-top: 20px;  
+  }
+  /*x title x*/
+
+  /*ooo Form ooo*/
+  main form.form-search {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  input[value="Rechercher"] { 
+    display:none; 
+  }
+    
+  .fa-search {
+    opacity: 1;
+    width: 45px;
+    height: 45px;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--blue);
+    color: #FFF;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  /*o filters o*/
+  main div.filters {    
+    display: flex;    
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;   
+    margin: 20px 0; 
+  }
+
+  div.filters button  { 
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  div.mobile {
+    display: flex;
+    flex-flow: row wrap;
+    }
+  /*x filters x*/
+
+  /*ooo Hebergements and Plus Populaires ooo*/
+  .column-heber {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px 0 4px;
+  }
+  
+  .column-popul {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px 0 4px;
+  }
+  /*xxx Hebergements and Plus Populaires xxx*/
+  /*xxx Main xxx*/
+
+  /*ooo Footer ooo*/ 
+  #footer-navigation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;    
+  }
+  /*xxx Footer xxx*/  
+}
+/*xxx Responsive layout - 768px xxx*/
