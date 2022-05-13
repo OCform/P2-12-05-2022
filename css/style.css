@@ -326,29 +326,47 @@ main div.information p {
   height: 250px;
   object-fit: cover;
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 992px) {
-  /*<!--ooo Hébergements à Marseille ooo-->*/
-  .column-heberg {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-  /*<!--ooo Hébergements à Marseille ooo-->*/
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 768px) {
-  /*<!--ooo Hébergements à Marseille ooo-->*/
-  .column-heberg {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-  /*<!--ooo Hébergements à Marseille ooo-->*/
-}
 /*<!--ooo Hébergements à Marseille ooo-->*/
+
+/*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+.header-popula {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.row-popula {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  border: 2px solid blueviolet;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-popula {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column-popula .box {
+  margin: 8px 0;
+  vertical-align: top;
+  width: 100%;
+  height: 300px;
+  border: 2px solid red;
+}
+
+.column-popula img {
+  padding: 8px;
+  vertical-align: top;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+/*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
 
 /*xxx Hebergements && Populaires xxx*/
 
@@ -550,6 +568,22 @@ footer {
     flex: 50%;
     max-width: 50%;
   }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+  .column-heberg {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+
+  /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+  .column-popula {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+
   /*xxx Hebergements and Plus Populaires xxx*/
 
   /*ooo Activite ooo*/
@@ -676,6 +710,22 @@ footer {
     max-width: 100%;
     padding: 0 4px 0 4px;
   }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+  .column-heberg {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+
+  /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+  .column-popula {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+
   /*xxx Hebergements and Plus Populaires xxx*/
 
   /*ooo Activite ooo*/
