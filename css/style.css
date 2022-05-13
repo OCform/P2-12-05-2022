@@ -266,11 +266,11 @@ main div.information p {
 }
 
 .column-heber .box {
+  background-color: var(--grey);
   margin: 8px 0;
   vertical-align: top;
-  width: 100%;
-  height: 300px;
-  border: 2px solid red;
+  width: 100%;  
+  border-radius: 25px;
 }
 
 .column-popul {
@@ -281,6 +281,37 @@ main div.information p {
 }
 
 .column-popul .box {
+  background-color: var(--grey);
+  margin: 8px 0;
+  vertical-align: top;
+  width: 100%;
+  border-radius: 25px;
+}
+
+/*<!--ooo Hébergements à Marseille ooo-->*/
+.header-heberg {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.row-heberg {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  border: 2px solid blue; 
+}
+
+/* Create four equal columns that sits next to each other */
+.column-heberg {
+  -ms-flex: 33.33%; /* IE10 */
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 0 4px;
+}
+
+.column-heberg .box {
   margin: 8px 0;
   vertical-align: top;
   width: 100%;
@@ -288,6 +319,36 @@ main div.information p {
   border: 2px solid red;
 }
 
+.column-heberg img {
+  padding: 8px;
+  vertical-align: top;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+  .column-heberg {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+  .column-heberg {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  /*<!--ooo Hébergements à Marseille ooo-->*/
+}
+/*<!--ooo Hébergements à Marseille ooo-->*/
 
 /*xxx Hebergements && Populaires xxx*/
 
