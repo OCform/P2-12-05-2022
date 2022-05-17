@@ -99,10 +99,14 @@ main {
 
 /*o title o*/
 main .title {
-    padding: 0; 
-    display: flex;  
-    justify-content: space-between;
-    flex-direction: column;
+  padding: 0; 
+  display: flex;  
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 main .title h1 {
@@ -167,11 +171,15 @@ input::placeholder {
 
 /*o filters o*/
 main div.filters {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center; 
-    gap: 20px;     
-    margin: 0px 0; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  gap: 20px;     
+  margin: 0px 0; 
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 main div.filters div.mobile {
@@ -232,12 +240,16 @@ button i.filter {
   color: var(--blue);
 }
   
-  main div.information {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    align-items: center;
+main div.information {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
   
 main div.information p {
@@ -253,8 +265,6 @@ main div.information p {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  border: 2px solid green;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -291,45 +301,76 @@ main div.information p {
 /*<!--ooo Hébergements à Marseille ooo-->*/
 .header-heberg {
   text-align: left;
-  padding-left: 8px;
+  padding-left: 34px;
+  padding-top: 25px;
   display: flex;
 }
 
 .row-heberg {
+  padding: 0 14px;
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  border: 2px solid blue; 
 }
 
 /* Create four equal columns that sits next to each other */
 .column-heberg {
+  padding: 0 14px;
   -ms-flex: 33.33%; /* IE10 */
   flex: 33.33%;
-  max-width: 33.33%;
-  padding: 0 4px;
+  max-width: 33.33%;  
   display: flex;
   flex-direction: column;
 }
 
-.column-heberg .box {
-  margin: 8px 0;
+.column-heberg .card {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  background-color: white;  
   vertical-align: top;
   width: 100%;
-  height: 200px;
-  border: 2px solid red;
+  height: 240px;
+}
+
+.column-heberg .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .column-heberg img {
-  padding: 8px;
+  border-radius: 25px 25px 0 0;
+  padding: 4px;
   vertical-align: top;
   width: 100%;
-  height: 150px;
+  height: 140px;
   object-fit: cover;
 }
-/*<!--ooo Hébergements à Marseille ooo-->*/
+
+.column-heberg .container {
+  padding: 2px 16px;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.column-heberg .container h3,
+.column-heberg .container h4,
+.column-heberg .container p {
+  margin: 0; 
+}
+
+/*ooo Affichez plus ooo*/
+.affichez-plus {
+  font-size: 1.2em;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+/*xxx Affichez plus xxx*/
+
+/*<!--xxx Hébergements à Marseille xxx-->*/
 
 /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
 .header-popula {
@@ -346,8 +387,7 @@ main div.information p {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
-  border: 2px solid blueviolet;
+  padding: 0 14px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -355,15 +395,16 @@ main div.information p {
   -ms-flex: 100%; /* IE10 */
   flex: 100%;
   max-width: 100%;
-  padding: 0 4px;
+  padding: 0 14px;
 }
 
-.column-popula .box {
-  margin: 8px 0;
+.column-popula .card {
+  background-color: white;
+  
   vertical-align: top;
   width: 100%;
-  height: 194px;
-  border: 2px solid red;
+  height: 144px;
+  display: flex;
 }
 
 .column-popula img {
@@ -384,7 +425,6 @@ main div.information p {
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  border: 0px solid green;
 }
 
 .row-activi .card:hover {
@@ -394,7 +434,7 @@ main div.information p {
 .row-activi .card h3 {
 	margin: 0;
     padding: 0;
-    font: 1em 'Raleway', sans-serif;
+    font-size: 1em;
 }
 
 .row-activi .box {
@@ -410,9 +450,10 @@ main div.information p {
     padding: 10px;
 }
 
-.row-activi .header-activi {
+.header-activi {
   text-align: left;
-  padding-left: 8px;
+  padding-left: 34px;
+  padding-top: 25px;
 }
 
 .row-activi {
@@ -421,23 +462,21 @@ main div.information p {
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   padding: 0 14px;
-  border: 0px solid blueviolet;
 }
 
 /* Create four equal columns that sits next to each other */
 .row-activi .column-activi {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  max-width: 25%;
-  padding: 0 14px;
+  max-width: 25%;  
 }
 
 .row-activi .column-1 .box {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
   height: 440px;
-  border: 0px solid red;
+  padding-right: 14px;
 }
 
 .row-activi .column-1 img {
@@ -449,11 +488,11 @@ main div.information p {
 }
 
 .row-activi .column-2 .box.box-1 {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
   height: 250px;
-  border: 0px solid red;
+  padding: 0 14px;   
 }
 
 .row-activi .column-2 .box.box-1 img {
@@ -465,11 +504,11 @@ main div.information p {
 }
 
 .row-activi .column-2 .box.box-2 {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
   height: 166px;
-  border: 0px solid red;
+  padding: 0 14px;
 }
 
 .row-activi .column-2 .box.box-2 img {
@@ -480,13 +519,12 @@ main div.information p {
   object-fit: cover;
 }
 
-
 .row-activi .column-3 .box {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
   height: 440px;
-  border: 0px solid red;
+  padding: 0 14px;
 }
 
 .row-activi .column-3 img {
@@ -498,11 +536,11 @@ main div.information p {
 }
 
 .row-activi .column-4 .box.box-3 {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
   height: 192px;
-  border: 0px solid red;
+  padding-left: 14px;
 }
 
 .row-activi .column-4 .box.box-3 img {
@@ -514,11 +552,11 @@ main div.information p {
 }
 
 .row-activi .column-4 .box.box-4 {
-  margin: 24px 0;
+  margin-bottom: 24px;
   vertical-align: top;
   width: 100%;
-  height: 224px;
-  border: 0px solid red;
+  height: 224px;  
+  padding-left: 14px; 
 }
 
 .row-activi .column-4 .box.box-4 img {
@@ -590,7 +628,7 @@ footer {
     max-width: 100%;
   }
 
-  .column-popula .box {
+  .column-popula .card {
     margin: 32px 0;
     vertical-align: top;
     width: 100%;
@@ -765,7 +803,6 @@ footer {
     vertical-align: top;
     width: 100%;
     height: 200px;
-    border: 0px solid red;
   }
 
   .row-activi .column-1 img {
@@ -780,7 +817,6 @@ footer {
     vertical-align: top;
     width: 100%;
     height: 200px;
-    border: 0px solid red;
   }
 
   .row-activi .column-2 .box.box-1 img {
@@ -795,7 +831,6 @@ footer {
     vertical-align: top;
     width: 100%;
     height: 200px;
-    border: 0px solid red;
   }
 
   .row-activi .column-2 .box.box-2 img {
@@ -812,7 +847,6 @@ footer {
     vertical-align: top;
     width: 100%;
     height: 200px;
-    border: 0px solid red;
   }
 
   .row-activi .column-3 img {
@@ -828,7 +862,6 @@ footer {
     vertical-align: top;
     width: 100%;
     height: 200px;
-    border: 0px solid red;
   }
 
   .row-activi .column-4 .box.box-3 img {
@@ -843,8 +876,7 @@ footer {
      
     vertical-align: top;
     width: 100%;
-    height: 200px;
-    border: 0px solid red;
+    height: 200px;    
   }
 
   .row-activi .column-4 .box.box-4 img {
