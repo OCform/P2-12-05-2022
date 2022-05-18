@@ -27,6 +27,7 @@
 
 /*ooo Global Classes ooo*/
 body { 
+  min-width: 393px;
   height: 1880px;
   margin: 0px auto;
   font-family: 'Raleway', sans-serif;  
@@ -677,17 +678,20 @@ footer {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+    padding-top: 18px;
+    padding-bottom: 56px;
   }
 
   .column-popula .card {
-    margin: 28.5px 0;
+    margin-top: 0;
+    margin-bottom: 25px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 25px;
     background-color: white;  
     vertical-align: top;
     width: 100%;
-    height: 513px;
+    height: 500px;
     display: flex;
     flex-direction: column;
   }
@@ -697,7 +701,7 @@ footer {
     padding: 4px;
     vertical-align: top;
     width: 100%;
-    height: 410px;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -822,18 +826,32 @@ footer {
   /*x filters x*/
 
   /*ooo Hebergements and Plus Populaires ooo*/
+  div.row-heber-popul {
+    padding: 0;
+  }
   .column-heber {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-    padding: 0 4px 0 4px;
+    padding: 0;
+    order: 2;
+  }
+
+  .column-heber .box {
+    background-color: transparent;    
+    border-radius: 0px;
   }
   
   .column-popul {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
-    padding: 0 4px 0 4px;
+    padding: 0;
+    order: 1;
+  }
+
+  .column-popul .box {  
+    border-radius: 0px;
   }
   /*<!--ooo Hébergements à Marseille ooo-->*/
   .column-heberg {
@@ -844,11 +862,88 @@ footer {
   /*<!--ooo Hébergements à Marseille ooo-->*/
 
   /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
-  .column-popula {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+  /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+.header-popula {
+  text-align: left;
+  padding: 0 25px;
+  padding-top: 25px;  
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.row-popula {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 12.5px;
+  justify-content: space-between;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-popula {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 12.5px;
+}
+
+.column-popula .card {
+  margin: 28.5px 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  background-color: white;  
+  vertical-align: top;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.column-popula .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.column-popula picture {
+  width: 60%;
+}
+
+.column-popula img {
+  border-radius: 25px 0 0 25px;
+  padding: 4px;
+  vertical-align: top;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+h2.pop, .fa-chart-line.pop {
+  margin: 0px;
+}
+
+.column-popula .container {
+  width: 300px;
+  padding: 16px;
+  font-size: 1em;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column-popula .container h3,
+.column-popula .container p {
+  margin: 0; 
+}
+
+.column-popula .container h4 {
+  margin: 0;
+}
+/*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
+
   /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
 
   /*xxx Hebergements and Plus Populaires xxx*/
