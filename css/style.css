@@ -371,7 +371,7 @@ main div.information p {
 }
 
 .column-heberg .container h3,
-.column-heberg .container h4,
+.column-heberg .container .note,
 .column-heberg .container p {
   margin: 0; 
 }
@@ -457,7 +457,7 @@ h2.pop, .fa-chart-line.pop {
   margin: 0; 
 }
 
-.column-popula .container h4 {
+.column-popula .container .note {
   margin: 0;
 }
 /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
@@ -949,7 +949,7 @@ h2.pop, .fa-chart-line.pop {
   margin: 0; 
 }
 
-.column-popula .container h4 {
+.column-popula .container .note {
   margin: 0;
 }
 /*<!--ooo Hébergements les Populaires à Marseille ooo-->*/
