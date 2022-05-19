@@ -171,6 +171,15 @@ input::placeholder {
 .fa-search {
     opacity: 0;
 }
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
 /*x formulaire x*/
 
 /*o filters o*/
@@ -178,7 +187,7 @@ main div.filters {
   display: flex;
   flex-wrap: wrap;
   align-items: center; 
-  gap: 20px;     
+  gap: 30px;     
   margin: 0px 0; 
   max-width: 1380px;
   width: 100%;
@@ -189,7 +198,7 @@ main div.filters {
 main div.filters div.mobile {
     display: flex;
     flex-direction: row;
-    gap: 20px;   
+    gap: 30px;   
 }
 
 .filters p {
@@ -199,7 +208,7 @@ main div.filters div.mobile {
 
 .filters span {
   font-weight: bolder;
-  margin: 0 20px;    
+  margin: 0 10px;    
 }
 
 .fa-money-bill-wave, 
@@ -304,7 +313,7 @@ main div.information p {
 }
 
 /*<!--ooo Hébergements à Marseille ooo-->*/
-.header-heberg {
+#header-heberg {
   text-align: left;
   padding-left: 25px;
   padding-top: 0px;
@@ -426,7 +435,7 @@ main div.information p {
   border-radius: 25px 0 0 25px;
   padding: 4px;
   vertical-align: top;
-  width: 85px;
+  width: 120px;
   height: 160px;
   object-fit: cover;
 }
@@ -465,7 +474,7 @@ h2.pop, .fa-chart-line.pop {
 }
 
 .row-activi .card:hover {
-  box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .row-activi .card h3 {
@@ -487,7 +496,7 @@ h2.pop, .fa-chart-line.pop {
     padding: 10px;
 }
 
-.header-activi {
+#header-activi {
   text-align: left;
   padding-left: 26px;
   padding-top: 50px;
@@ -620,10 +629,11 @@ footer {
 #footer-navigation {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  gap: 250px;
   max-width: 1380px;
   width: 100%;
   margin: 0 auto;
