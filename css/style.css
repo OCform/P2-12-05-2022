@@ -733,11 +733,12 @@ footer {
   }
   /*ooo Activite ooo*/
 
-  /*xxx Footer */
+  /*ooo Footer ooo*/
   #footer-navigation {
     display: flex;
     gap: 200px;
   } 
+  /*xxx Footer xxx*/
 }
 /*xxx Responsive layout - 992px xxx*/
 
