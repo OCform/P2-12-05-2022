@@ -732,6 +732,12 @@ footer {
     max-width: 50%;
   }
   /*ooo Activite ooo*/
+
+  /*xxx Footer */
+  #footer-navigation {
+    display: flex;
+    gap: 150px;
+  } 
 }
 /*xxx Responsive layout - 992px xxx*/
 
