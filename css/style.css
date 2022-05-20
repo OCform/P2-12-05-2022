@@ -736,7 +736,7 @@ footer {
   /*xxx Footer */
   #footer-navigation {
     display: flex;
-    gap: 150px;
+    gap: 200px;
   } 
 }
 /*xxx Responsive layout - 992px xxx*/
