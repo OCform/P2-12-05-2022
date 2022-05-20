@@ -736,7 +736,7 @@ footer {
   /*ooo Footer ooo*/
   #footer-navigation {
     display: flex;
-    gap: 200px;
+    gap: 150px;
   } 
   /*xxx Footer xxx*/
 }
