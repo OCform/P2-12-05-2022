@@ -368,7 +368,7 @@ main div.information p {
 
 .column-heberg .container {
   padding: 2px 16px;
-  font-size: .8em;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -382,7 +382,7 @@ main div.information p {
 
 /*ooo Affichez plus ooo*/
 .affichez-plus {
-  font-size: 1.2em;
+  font-size: 16px;
   padding-left: 30px;
   padding-bottom: 30px;
 }
@@ -450,7 +450,7 @@ h2.pop, .fa-chart-line.pop {
 
 .column-popula .container {
   padding: 8px 16px;
-  font-size: .8em;  
+  font-size: 12px;  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -484,7 +484,7 @@ h2.pop, .fa-chart-line.pop {
 .row-activi .card h3 {
 	margin: 0;
     padding: 0;
-    font-size: 1em;
+    font-size: 12px;
 }
 
 .row-activi .box {
@@ -657,13 +657,28 @@ footer {
 }
 /*1280*/
 
-/*1055*/
+/*1120*/
 @media all and (max-width: 1120px) {
   .column-popula .card {
     margin: 22.5px 0; 
   }
 }
-/*1055*/
+/*1120*/
+
+/*1082*/
+@media all and (max-width: 1082px) {
+  .note {
+    font-size: 8px;
+  }
+
+  /*ooo Footer ooo*/
+  #footer-navigation {
+    display: flex;
+    gap: 200px;
+  } 
+  /*xxx Footer xxx*/
+}
+/*1082*/
 
 /*ooo Responsive layout - 992px ooo*/
 @media all and (max-width: 992px) {
@@ -721,7 +736,7 @@ footer {
 
   .column-popula .container {
     padding: 8px 16px;
-    font-size: 1em;  
+    font-size: 12px;  
     display: flex;
     flex-direction: column;
   }
@@ -949,7 +964,7 @@ h2.pop, .fa-chart-line.pop {
 .column-popula .container {
   width: 300px;
   padding: 16px;
-  font-size: 1em;  
+  font-size: 12px;  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
