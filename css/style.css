@@ -2,7 +2,7 @@
   -moz-box-sizing    : border-box; /* Firefox */
   -webkit-box-sizing : border-box; /* Safari */
   box-sizing         : border-box;
-  *behavior          : url(./js/boxsizing.htc); /* ie7 et ie8 */
+  *behavior          : url(./css/boxsizing.htc); /* ie7 et ie8 */
 }
 
 /*oooo Color Chart oooo*/ 
@@ -275,7 +275,9 @@ main div.information p {
 /*o information o*/
 
 /*ooo Hebergements && Populaires && Activtes ooo*/
-
+.note {
+  font-size: 8px;
+}
 /*ooo Hebergements && Populaires ooo*/
 .row-heber-popul {
   padding: 0 12.5px;
@@ -384,7 +386,7 @@ main div.information p {
 .affichez-plus {
   font-size: 16px;
   padding-left: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 /*xxx Affichez plus xxx*/
 
@@ -497,8 +499,9 @@ h2.pop, .fa-chart-line.pop {
 
 .row-activi .card .container {
     text-align: left;
-    padding: 10px;
-}
+    padding: 20px;
+    
+  }
 
 #header-activi {
   text-align: left;
@@ -648,14 +651,6 @@ footer {
   line-height: 200%;
 }
 /*xxx Footer xxx*/ 
-
-/*1280*/
-@media all and (min-width: 1244px) { 
-  .column-popula .container {    
-    font-size: 1em;
-  }  
-}
-/*1280*/
 
 /*1120*/
 @media all and (max-width: 1120px) {
@@ -1091,7 +1086,8 @@ h2.pop, .fa-chart-line.pop {
     align-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    gap: 0px;  
   }
   /*xxx Footer xxx*/  
 }
