@@ -39,13 +39,20 @@
   </div>
   <!--x title x-->
   <!--o formulaire o-->  
-  <form class="form-search" action="#">
+  <form action="#" method="get" id="form-search" >
+    <i class="fa fa-map-marker-alt"></i>
+    <label for="search" class="sr-only" id="searchLabel">Rechercher</label>          
+    <input id="search" aria-labelledby="searchLabel" class="p-holder" type="search" placeholder="Marseille, France" name="search">
+    <button class="search" type="submit" form="form-search" value="Submit">Rechercher</button>    
+    <i class="fa fa-search"></i>
+  </form>
+  <!--form class="form-search" action="#">
     <i class="fa fa-map-marker-alt"></i>
     <label for="search" class="sr-only" id="searchLabel">Rechercher</label>          
     <input id="search" aria-labelledby="searchLabel" class="p-holder" type="search" placeholder="Marseille, France" name="search">
     <input class="search" type="submit" value="Rechercher">
     <i class="fa fa-search"></i>
-  </form>
+  </form-->
   <!--x formulaire x-->
   <!--o filters o-->
   <div class="filters">
